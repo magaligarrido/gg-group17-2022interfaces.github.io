@@ -1,0 +1,567 @@
+.container-juego-destacado {
+    margin-top: 10vh;
+}
+
+.container-juego-lanzamiento {
+    margin-top: 10vh;
+}
+
+.container-banner {
+    background-color: #131313;
+    display: flex;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.80);
+}
+
+.img-lanzamiento {
+    width: 50%;
+    height: auto;
+}
+
+.container-banner-texto {
+    width: 50%;
+    text-align: center;
+}
+
+.p-promocion {
+    font-size: 30px;
+    margin: 0 10%;
+    margin-bottom: 2vh;
+}
+
+.container-presentacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.t-informacion {
+    width: 70%;
+    text-align: center;
+    margin: 3vh auto;
+}
+
+.container-imagenes-destacadas {
+    display: flex;
+    width: 100%;
+    height: 25vh;
+}
+
+.img-destacadas {
+    width: 120%;
+    height: 120%
+}
+
+.t-informacion,
+.titulo-fecha-lanzamiento,
+.titulo-personajes,
+.titulo-apodo,
+.titulo-nombre {
+    color: black;
+}
+
+.titulo-personajes {
+    position: absolute;
+    left: 537px;
+}
+
+.titulo-historia,
+.p-historia {
+    color: #ffffff;
+}
+
+.container-estreno p {
+    text-align: justify;
+}
+
+.titulo-juego-lanzamiento {
+    margin-bottom: 5px;
+    font-size: 80px;
+}
+
+.titulo-fecha-lanzamiento {
+    text-align: center;
+    margin: 0;
+}
+
+.titulo-historia {
+    font-size: 35px;
+    margin: 0;
+}
+
+.titulo-descripcion,
+.titulo-sinopsis {
+    color: rgba(255, 255, 255, 0.70);
+    margin: 0;
+}
+
+.titulo-sinopsis {
+    font-size: 2.3rem;
+}
+
+.titulo-descripcion {
+    font-size: 3rem;
+}
+
+.titulo-roles {
+    margin: 0;
+    font-size: 3rem;
+    padding-left: 10%;
+}
+
+.p-historia {
+    width: 90%;
+    text-align: justify;
+    font-size: 21px;
+}
+
+.p-descripcion,
+.p-historia {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.p-descripcion {
+    font-size: 2rem;
+}
+
+.container-estreno {
+    margin: 10vh 0 10vh 0;
+    display: flex;
+}
+
+.container-historia {
+    position: absolute;
+    width: 45%;
+    right: 5%;
+    top: 28%;
+    z-index: 1;
+}
+
+.container-objetivo-lanzamiento {
+    background-color: #14191D;
+    display: flex;
+    width: 100%;
+}
+
+.container-descripcion {
+    width: 40%;
+    margin: auto 5%;
+}
+
+.img-lore {
+    width: 100%;
+    margin: 30px 0 30px 0;
+}
+
+.personajes {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.img-personaje {
+    width: 180px
+}
+
+.seccion-personajes {
+    width: 100%;
+    height: 65vh;
+    margin-top: 15%;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 9%;
+}
+
+.titulo-apodo,
+.titulo-nombre {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.titulo-apodo {
+    font-size: 20px;
+}
+
+.titulo-nombre {
+    font-size: 25px;
+}
+
+img.img-personaje {
+    border-radius: 50%;
+}
+
+.container-jugabilidad {
+    margin: 5%;
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    z-index: 100;
+}
+
+.sinopsis {
+    opacity: 0;
+    width: 50%;
+    padding: 30px;
+    background-color: #1C3862;
+    margin-right: 5%;
+    border-radius: 20px
+}
+
+.p-sinopsis {
+    font-size: 26px;
+    text-align: justify;
+    width: auto;
+}
+
+.roles {
+    opacity: 0;
+    padding: 15px;
+    background-color: #30C4D8;
+    margin-left: 3%;
+    width: 43%;
+    border-radius: 20px
+}
+
+.lista-roles {
+    display: flex;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 3% 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+.carrusel-lanzamiento {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+}
+
+.card-lanzamiento-figura {
+    width: 60vw;
+    height: 40vw;
+    max-width: 380px;
+    max-height: 250px;
+    margin: 0;
+    perspective: 1000px;
+}
+
+.card-lanzamiento-contenido {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: carrusel 15s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.card-lanzamiento-item {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 380px;
+    max-height: 250px;
+}
+
+.card-lanzamiento-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-lanzamiento-item:nth-child(4) {
+    transform: rotateY(270deg) translateZ(35vw);
+}
+
+.card-lanzamiento-item:nth-child(3) {
+    transform: rotateY(0) translateZ(35vw);
+}
+
+.card-lanzamiento-item:nth-child(2) {
+    transform: rotateY(90deg) translateZ(35vw);
+}
+
+.card-lanzamiento-item:nth-child(1) {
+    transform: rotateY(180deg) translateZ(35vw);
+}
+
+@keyframes carrusel {
+    0%,
+    20% {
+        transform: translateZ(-25vw) rotateY(0);
+    }
+    20%,
+    40% {
+        transform: translateZ(-25vw) rotateY(-90deg);
+    }
+    40%,
+    60% {
+        transform: translateZ(-25vw) rotateY(-180deg);
+    }
+    60%,
+    80% {
+        transform: translateZ(-25vw) rotateY(-270deg);
+    }
+    80%,
+    100% {
+        transform: translateZ(-25vw) rotateY(-360deg);
+    }
+}
+
+
+/*PARALLAX*/
+
+.parallax {
+    background-image: url('../images/parallax1.png');
+    height: 90vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(20%);
+}
+
+.parallax2 {
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    z-index: 10;
+}
+
+.nave {
+    position: fixed;
+    top: -15%;
+    z-index: 100;
+}
+
+.container-hero {
+    background-color: #2b2e30;
+}
+
+.container-hero-texto {
+    opacity: 1;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    transition: opacity 0.8s;
+}
+
+.difuminado {
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.container-introduccion-lanzamiento {
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    z-index: 1;
+    background-color: #ffffffeb;
+    width: 100%;
+}
+
+.container-fecha-lanzamiento {
+    opacity: 0;
+    width: 40%;
+    position: absolute;
+    top: 28%;
+    padding: 40px 0;
+    background-color: #ffffff;
+    z-index: 2;
+    border-radius: 10px;
+    left: 5%;
+    box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -webkit-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -moz-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+}
+
+.trasladar {
+    animation: trasladar 1s ease-out;
+}
+
+@keyframes trasladar {
+    from {
+        transform: translateX(2000px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.trasladarTop {
+    animation: trasladarTop 1s ease-out;
+}
+
+@keyframes trasladarTop {
+    from {
+        transform: translateY(200px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.trasladarCard {
+    transition: left .7s ease-in-out;
+}
+
+.trasladarTitte {
+    transition: top .7s ease-in-out;
+}
+
+.moveStars {
+    animation: stars 15s ease-in-out infinite;
+}
+
+@keyframes stars {
+    0% {
+        transform: translateY(200px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
+
+.moveNave {
+    animation: stars 10s ease-out infinite;
+}
+
+.dimensionar {
+    animation-duration: 1s;
+    animation-name: dimensionar;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dimensionar {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.container-objetivo-lanzamiento {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #14191D;
+}
+
+.stickyScroll {
+    position: sticky;
+    width: 50%;
+    height: 100%;
+    top: 15%;
+}
+
+.textoScroll {
+    width: 50%;
+}
+
+.descripcion-lanzamiento:last-of-type {
+    margin-bottom: auto;
+    padding: 0;
+}
+
+.descripcion-lanzamiento:first-of-type {
+    padding: 45% 0;
+}
+
+.descripcion-lanzamiento {
+    height: 380px;
+    color: #ffffff;
+    margin: 25px 50px 100px 50px;
+    transition: opacity .4s ease-in-out;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.img {
+    height: 500px;
+    margin: 15% 0 15% 5%;
+}
+
+.img:last-of-type {
+    margin-bottom: auto;
+}
+
+.oculto {
+    opacity: 0;
+}
+
+.img-oculta {
+    display: none;
+    visibility: hidden;
+}
+
+
+/*Spritesheet*/
+
+.spritesheets {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    position: absolute;
+    top: 13%;
+    z-index: 10;
+    background-color: #ffffff0a;
+}
+
+.spritesheet {
+    background: url(../images/spritesheet-correr.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 81px;
+    animation: pelea 2s steps(10) infinite;
+}
+
+@keyframes pelea {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -813px;
+    }
+}
+
+.spritesheet2 {
+    background: url(../images/spritesheet-saltar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 60px;
+    animation: pelea2 2s steps(12) infinite;
+}
+
+@keyframes pelea2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -727px;
+    }
+}

@@ -1,0 +1,129 @@
+.container-dialog-config {
+    width: 0;
+    height: 80vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    transition: 0.4s ease;
+    left: 10%;
+    padding: 0 0 1rem 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    top: 15vh;
+    box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -webkit-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -moz-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+}
+
+.container-dialog-config .btn-destacado{
+    bottom: 5%;
+}
+
+.form-configuracion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.form-configuracion legend {
+    font-size: 1.5rem;
+    margin: 25px 0 5px 0;
+}
+
+
+.container-radio-fichas,
+.container-selector-fichas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-radio {
+    width: 45%;
+}
+
+.container-radio-casilleros {
+    width: 100%;
+}
+
+.container-radio,
+.container-radio-casilleros {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #ffffff
+}
+
+.container-cant-filas {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.container-cant-filas label {
+    width: 50%;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.fichas-jugadores-seleccion{
+    display: flex; 
+    flex-direction:row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fichas-jugadores-seleccion input{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 5px;
+    color: var(--secondary-color);
+}
+
+#value-filas-selected {
+    width: 30%;
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+/* HIDE RADIO */
+
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* IMAGE STYLES */
+
+[type=radio]+img {
+    cursor: pointer;
+    transition: transform 1s;
+    margin: 0 15px;
+}
+
+[type=radio]+img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+/* CHECKED STYLES */
+
+[type=radio]:checked+img {
+    outline: 2px solid #f00;
+}
+
+.disabled-ficha {
+    filter: brightness(50%);
+}

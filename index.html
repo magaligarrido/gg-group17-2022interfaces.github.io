@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Games</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="id-spin" class="loader-div">
+        <div class="loader"></div>
+        <h2 id="id-porcentaje">0%</h2>
+    </div>
+    <div id="id-div-contenido">
+        <header class="container-header">
+
+            <div class="hamburger-menu c-header">
+                <div class="bar"></div>
+            </div>
+
+            <a href="index.html" class="logo c-header">
+                <img src="./logo/logo_Mesa de trabajo 1.png" alt="logo.png">
+            </a>
+            <div class="container-accesos-user c-header">
+                <a href=""><img src="./icons/user.png" class="i-user icono c-header"></a>
+                <a href=""><img src="./icons/carrito1.png" class="i-carrito icono c-header"></a>
+            </div>
+        </header>
+
+
+        <div id="sidebar-menu" class="sidebar-menu">
+
+            <div id="contenido-menu" class="contenido-menu">
+
+                <h4 class="seccion-menu  titulo-menu seccion-menu-titulo">Rocket Games</h4>
+
+                <div class="seccion-menu seccion-menu-config">
+                    <h2>Juegos</h2>
+                    <a href="">Destacados</a>
+                    <a href="">Ajustes del juego</a>
+                </div>
+
+                <div class="seccion-menu seccion-menu-categorias">
+                    <h2>Categorias</h2>
+                    <a href="">Accion</a>
+                    <a href="">Aventura</a>
+                    <a href="">Carrera</a>
+                    <a href="">Clásicos</a>
+                    <a href="">Infantiles</a>
+                    <a href="">Más jugados</a>
+                </div>
+
+                <div class="seccion-menu seccion-menu-perfil">
+                    <a href="">Perfil</a>
+                    <a href="">Configuración de cuenta</a>
+                    <a href="">Cerrar sesión</a>
+                </div>
+
+                <div class="seccion-menu-blog">
+                    <a href="" class="blog-rocket"><img class="i-blog" src="./icons/blog.png" alt="icon-blog.png">Blog Rocket Games</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-home">
+
+            <section class="container-destacado">
+                <img src="./images/000destacado.jpg" alt="citizen.jpg" class="img-destacado">
+                <div class="title-destacado">
+                    <h1>StarCitizen</h1>
+                </div>
+                <a href="./juegoDestacado.html" id="btn-juego-destacado" class="btn-destacado">Explorá el juego</a>
+                <a href="" id="icon-compartir"><img src="./icons/flecha.png" alt="icon-compartir.png"></a>
+            </section>
+
+            <section class="container-categorias-juegos">
+
+                <!--RECOMENDADOS-->
+                <div class="categoria-juegos">
+                    <h2 class="titulo-categoria">Recomendados</h2>
+
+                    <div class="carrusel">
+                        <a href="javascript:void(0)" id="id-prev-recomendados" class="slide-control prev icono slide-control-prev">
+                            <img class="img-flecha " src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+
+                        <a href="javascript:void(0)" id="id-next-recomendados" class="slide-control next icono slide-control-next">
+                            <img class="img-flecha" src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+                        <div id="container-cards-recomendados" class="container-cards-juegos width-carrusel">
+
+
+                            <div class="card-juego-recomendados">
+                                <a href="./cuatroEnLinea.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-cuatroenlinea" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/cuatroenlinea.png" alt="cuatroenlinea.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-harrypotter" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/002juego-harrypotter.jpg" alt="harrypotter.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-sackboy" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/003juego-sackboy.jfif" alt="sackboy.jfif">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-mariokart" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/004juego-mariokart.jpg" alt="mariokart.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-plantszombies3" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/005juego-plantszombies3.jpg" alt="plantszombies3.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-stumbleguys" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/006juego-stumbleguys.jpg" alt="stumbleguys.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-got" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/007juego-got.jpg" alt="juego-got.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-godofwar" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/008juego-godofwar.jpg" alt="juego-godofwar.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-minecraft" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/009juego-minecraft.webp" alt="juego-minecraft.jpg">
+                            </div>
+
+                            <div class="card-juego-recomendados">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-escuadron" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/010juego-escuadron.png" alt="juego-escuadron.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria-juegos">
+                    <h2 class="titulo-categoria">Favoritos</h2>
+
+                    <div class="carrusel">
+
+                        <a href="javascript:void(0)" id="id-prev-favoritos" class="slide-control prev icono slide-control-prev">
+                            <img class="img-flecha " src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+
+                        <a href="javascript:void(0)" id="id-next-favoritos" class="slide-control next icono slide-control-next">
+                            <img class="img-flecha" src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+
+                        <div id="container-cards-favoritos" class="container-cards-juegos-fav width-carrusel">
+
+                            <div class="card-juego-favoritos">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-wonderzoo" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/010juego-wonderzoo.jpg" alt="wonderzoo.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-amongus" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/011juego-amongus.webp" alt="amongus.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-bloodborne" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/001juego-bloodborne.jpg" alt="bloodborne.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-mariokart" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/004juego-mariokart.jpg" alt="mariokart.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-plantszombies3" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/005juego-plantszombies3.jpg" alt="plantszombies3.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-stumbleguys" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/006juego-stumbleguys.jpg" alt="stumbleguys.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-got" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/007juego-got.jpg" alt="juego-got.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-godofwar" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/008juego-godofwar.jpg" alt="juego-godofwar.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-minecraft" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/009juego-minecraft.webp" alt="juego-minecraft.jpg">
+                            </div>
+
+                            <div class="card-juego-favoritos">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-escuadron" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/010juego-escuadron.png" alt="juego-escuadron.jpg">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="categoria-juegos">
+                    <h2 class="titulo-categoria">Multijugador</h2>
+
+                    <div class="carrusel">
+                        <a href="javascript:void(0)" id="id-prev-multijugador" class="slide-control prev icono slide-control-prev">
+                            <img class="img-flecha " src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+
+                        <a href="javascript:void(0)" id="id-next-multijugador" class="slide-control next icono slide-control-next">
+                            <img class="img-flecha" src="./icons/slide-control.png" alt="slide-control.png">
+                        </a>
+
+                        <div id="container-cards-multijugador" class="container-cards-juegos-mmo">
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-bloodborne" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/001juego-bloodborne.jpg" alt="bloodborne.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-harrypotter" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/002juego-harrypotter.jpg" alt="harrypotter.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-sackboy" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/003juego-sackboy.jfif" alt="sackboy.jfif">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-mariokart" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/004juego-mariokart.jpg" alt="mariokart.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-plantszombies3" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/005juego-plantszombies3.jpg" alt="plantszombies3.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-stumbleguys" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/006juego-stumbleguys.jpg" alt="stumbleguys.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-got" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/007juego-got.jpg" alt="juego-got.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="#" id="btn-buy" class="btn-play btn-play-card">Buy</a>
+                                <a href="javascript:void(0)" id="i-info-card-godofwar" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/008juego-godofwar.jpg" alt="juego-godofwar.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-minecraft" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/009juego-minecraft.webp" alt="juego-minecraft.jpg">
+                            </div>
+
+                            <div class="card-juego-multijugador">
+                                <a href="./juego.html" id="btn-play" class="btn-play btn-play-card">Play</a>
+                                <a href="javascript:void(0)" id="i-info-card-escuadron" class="i-info-card icono"><img src="./icons/informacion.png" alt="icon-info.png"></a>
+                                <img class="i-destacado i-destacado-card" src="./icons/destacado.png" alt="icon-destacado.png">
+                                <img class="img-juego" src="./images/010juego-escuadron.png" alt="juego-escuadron.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dialogo con información del juego-->
+                <div class="dialogo-info-juego" id="dialogo-info-juego" data-animation="slideInOutLeft">
+
+                    <a href="javascript:void(0)" id="btn-close-dialogo" class="close-dialogo">x</a>
+                    <img class="i-destacado i-destacado-dialog" src="./icons/destacado.png" alt="icon-destacado.png">
+
+                    <div id="imagen-dialogo">
+                        <a id="id-anchor-juego-dialogo" href="" id="btn-play" class="btn-play btn-play-dialog">
+                            <img src="./icons/play-circle.png" class="i-play-dialog">Play</a>
+                        <img id="id-img-dialogo" class="img-dialogo-info" alt="imagen.jpg">
+                        <a href="javascript:void(0)">
+                            <p id="id-carrito-dialogo" class="btn-agregar-carrito"></p>
+                        </a>
+                    </div>
+
+                    <div class="contenido-info-dialogo">
+                        <div class="header-info-dialogo">
+                            <h5 id="id-titulo-dialogo" class="titulo-dialogo"></h5>
+                            <div class="container-accion-dialogo">
+                                <img class="i-favorito-dialogo icono" src="./icons/favoritos.png" alt="icon-favoritos.png">
+                                <p id="id-precio-dialogo" class="btn-carrito"></p>
+                            </div>
+                        </div>
+
+                        <p class="p-descripcion-dialogo" id="id-descripcion-dialogo"></p>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <footer class="container-footer footer-main">
+
+            <div class="container-top-footer">
+                <div class="container-ayuda">
+                    <h3>Ayuda</h3>
+                    <a href="">FAQs</a>
+                    <a href="">Contacto</a>
+                </div>
+
+                <div class="container-servicios">
+                    <h3>Servicios</h3>
+                    <a href="">Consegui actualizaciones</a>
+                    <a href="">Productos</a>
+                </div>
+
+                <div class="container-nosotros">
+                    <h3>Nosotros</h3>
+                    <div class="contenido-nosotros">
+                        <a href="">Equipo</a>
+                        <div class="container-follow">
+                            <p>Follow us</p>
+                            <a href="">
+                                <img src="icons/instagram.png" alt="instagram.png" class="i-instagram icono">
+                            </a>
+                            <a href="">
+                                <img src="icons/facebook.png" alt="facebook.png" class="i-facebook icono">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-botton-footer">
+                <div class="institucional">
+                    <img class="logo logo-footer" src="./logo/logo_Mesa de trabajo 1.png" alt="logo.png">
+
+                    <div class="container-legales">
+                        <div class="container-terminos">
+                            <a href="">Terminos y condiciones</a>
+                            <p class="barras"> | </p>
+                            <a href="">Politicas de privacidad</a>
+                            <p class="barras"> | </p>
+                            <a href="">Licencia</a>
+                        </div>
+
+                        <p class="text-CR">Copyrigth © RocketGames 2022 . Rocket Corpotarion</p>
+
+                    </div>
+                </div>
+
+                <div class="container-developers">
+                    <p>Powered by &nbsp</p>
+                    <a href="">Grupo 17</a>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="js/scroll.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/preloader.js"></script>
+</body>
+
+</html>

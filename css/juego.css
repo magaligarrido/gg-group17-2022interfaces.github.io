@@ -1,0 +1,255 @@
+    /*botones*/
+
+    .b-comentario {
+        width: 30px;
+        height: 30px;
+        margin: 0 20px;
+        background-image: url(../icons/enviar.png);
+        background-color: #393939;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+    }
+
+    /*img*/
+
+    .juego {
+        width: 90%;
+    }
+
+    /*iconos*/
+
+    .i-whatsapp,
+    .i-facebook,
+    .i-instagram,
+    .i-twitter,
+    .i-rueda-config,
+    .i-volumen,
+    .i-like {
+        width: 38px;
+        height: 38px;
+    }
+
+    .i-rueda-config,
+    .i-volumen,
+    .i-like {
+        margin: 10px 0;
+    }
+
+    .i-like-comentario {
+        width: 19px;
+        height: 19px;
+    }
+
+    .i-inicial {
+        width: 45px;
+        height: 45px;
+        margin: 0px 10px 20px 10px;
+    }
+
+    .reply:hover{
+        color: var(--primary-color);
+    }
+
+    .reply:active{
+        opacity: 0.5;
+    }
+    /*contenedores*/
+
+    .container-juego {
+        /* background-color: var(--secondary-color);
+    queda el fondo del juego con el mismo background del footer*/
+        background-color: #393939;
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    .container-jugar {
+        width: 90%;
+        margin: 2% 0 0 10%;
+        display: flex;
+    }
+
+    .container-aside-juego {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 5%;
+    }
+
+    .espacio-de-juego{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 50px 0;
+    }
+
+    .espacio-de-juego img{
+        width: 40%;
+    }
+    .container-config-juego {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*contenedor informacion*/
+
+    .container-informacion {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container-objetivo,
+    .container-comunidad {
+        margin-left: 10%;
+        width: 40%;
+    }
+
+    .container-instrucciones,
+    .container-contacto {
+        margin-right: 10%;
+        width: 25%;
+    }
+
+    /*contenedor social*/
+
+    .container-social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .valoraciones {
+        width: 90%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .container-resenia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        background-color: rgba(217, 217, 217, 20%);
+        border-radius: 20px;
+        margin-top: 18px;
+    }
+
+    .container-usuario {
+        width: 100%;
+    }
+
+    .detalle-usuario {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .difusion {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .container-likes {
+        display: flex;
+        align-items: center;
+    }
+
+    /*contenedor compartir*/
+
+    .container-compartir {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .container-ayuda-comentario {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0
+    }
+
+    .caja-comentarios {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*texto*/
+
+    .titulo-social {
+        margin: 20px 0;
+    }
+
+    .titulo-usuario,
+    .p-likes,
+    .p-comentario {
+        margin: 5px;
+    }
+
+    .p-likes {
+        font-size: 15px;
+    }
+
+    .a-mas-comentarios {
+        margin-top: 5px;
+    }
+
+    .a-mas-comentarios:hover {
+        color: var(--primary-color);
+    }
+
+    .a-mas-comentarios:active {
+       opacity: 0.5;
+    }
+
+    .p-objetivo,
+    .p-instrucciones {
+        text-align: justify;
+    }
+
+    /*colores*/
+
+    * {
+        color: white;
+    }
+
+    /*formulario*/
+
+    form {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    label {
+        margin: 5px 0;
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        border-width: 1px;
+        border-style: none;
+        border-bottom: inset;
+        border-color: #FFFFFF;
+    }
+
+    .textarea-comentario {
+        background-color: #d9d9d950;
+        border-radius: 20px;
+    }

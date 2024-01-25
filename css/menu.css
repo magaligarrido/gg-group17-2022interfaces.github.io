@@ -1,0 +1,129 @@
+@keyframes desplazamiento {
+    from {
+        margin-left: -200%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+.seccion-menu-titulo,
+.seccion-menu-config,
+.seccion-menu-categorias,
+.seccion-menu-perfil {
+    animation-duration: 0.5s;
+    animation-name: desplazamiento;
+}
+
+.seccion-menu-config {
+    animation-duration: 0.8s;
+}
+
+.seccion-menu-categorias {
+    animation-duration: 1.1s;
+}
+
+.seccion-menu-perfil {
+    animation-duration: 1.4s;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    margin: 0 5%;
+    margin-bottom: 40px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media screen and (min-width:480px) {
+    .hamburger-menu {
+        position: relative;
+        margin: 0;
+        margin-left: 10px;
+        margin-bottom: 40px;
+    }
+}
+
+.bar,
+.bar:after,
+.bar:before {
+    width: 30px;
+    height: 5px;
+}
+
+.bar {
+    position: relative;
+    transform: translateY(25px);
+    background: white;
+    transition: all 0ms 300ms;
+}
+
+.bar.animate {
+    background: rgba(255, 255, 255, 0);
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background: white;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: white;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bar.animate:after {
+    animation-duration: 0.8s;
+    animation-name: transformacionCruz;
+    animation-fill-mode: forwards;
+    /*    
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); */
+}
+
+.bar.animate:before {
+    animation-duration: 0.8s;
+    animation-name: transformacionCruz2;
+    animation-fill-mode: forwards;
+    /* bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); */
+}
+
+@keyframes transformacionCruz {
+    from {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    to {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+}
+
+@keyframes transformacionCruz2 {
+    from {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    to {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+}

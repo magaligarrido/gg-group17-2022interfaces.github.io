@@ -1,0 +1,455 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.categoria-juegos {
+    width: 100%;
+}
+
+.titulo-categoria {
+    color: #000000;
+    margin-left: 4%;
+}
+
+.container-cards-juegos,
+.container-cards-juegos-fav,
+.container-cards-juegos-mmo,
+.container-cards-juegos-personaje {
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    position: relative;
+    overflow: scroll;
+}
+
+.container-categorias-juegos,
+.container-lore {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-juego-recomendados,
+.card-juego-favoritos,
+.card-juego-multijugador {
+    overflow: hidden;
+    scroll-snap-align: center;
+    width: calc(100%/2);
+    border-radius: 35px;
+    margin: 20px 5%;
+    flex: 0 0 75%;
+    position: relative;
+    object-fit: cover;
+    height: 30vh;
+    box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.53);
+}
+
+.card-juego-recomendados .img-juego,
+.card-juego-favoritos .img-juego,
+.card-juego-multijugador .img-juego {
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn-play {
+    position: absolute;
+    color: #ffffff;
+    border: 2px solid;
+    padding: 5px 30px;
+    border-color: #ffffff;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 10;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-play-card {
+    bottom: 20%;
+    left: 25%;
+    right: 25%;
+    width: 25%;
+}
+
+.btn-play:hover {
+    background-color: #ffffff;
+    color: var(--paleta3-color);
+}
+
+.btn-play:active {
+    transform: scale(1.2);
+}
+
+.i-info-card {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 10;
+}
+
+.i-info-card img {
+    width: 30px;
+}
+
+.i-info-card img:hover {
+    width: 30px;
+}
+
+.i-destacado {
+    position: absolute;
+    top: -2%;
+    left: 5%;
+    z-index: 10;
+}
+
+.i-destacado-card {
+    width: 25px;
+}
+
+.slide-control {
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    height: 100%;
+    width: 5%;
+    visibility: hidden;
+}
+
+.slide-control img {
+    height: 65%;
+    position: absolute;
+    background-color: black;
+}
+
+.prev img {
+    transform: rotateY(180deg);
+    left: 2%;
+}
+
+.next img {
+    right: 0;
+}
+
+
+/*Dialog*/
+
+.dialogo-info-juego {
+    width: 0;
+    height: 68vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    transition: 0.4s ease;
+    left: 10%;
+    padding: 0 0 1rem 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    top: 15vh;
+    box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -webkit-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+    -moz-box-shadow: 2px 0px 41px -11px rgba(0, 0, 0, 0.65) inset;
+}
+
+.close-dialogo {
+    color: #ffffff;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 22px;
+    z-index: 100;
+}
+
+.img-dialogo-info {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    object-position: center;
+}
+
+.titulo-dialogo {
+    text-align: center;
+    margin: 0;
+}
+
+.btn-play-dialog {
+    bottom: 55%;
+    left: 35%;
+    right: 35%;
+    width: 10%;
+    font-size: 22px;
+}
+
+.i-play-dialog {
+    width: 25px;
+}
+
+.i-destacado-dialog {
+    width: 35px;
+}
+
+.contenido-info-dialogo {
+    color: #ffffff;
+    text-align: justify;
+    margin: 0 5%;
+}
+
+.container-accion-dialogo p {
+    font-size: 14px;
+}
+
+.header-info-dialogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-info-dialogo h4 {
+    margin: 5px;
+    font-size: 25px;
+}
+
+.btn-carrito {
+    top: 35%;
+    padding: 0;
+    font-size: 16px;
+}
+
+.btn-carrito,
+.btn-agregar-carrito {
+    margin: 0;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: var(--paleta4-color);
+    right: 5%;
+    z-index: 100;
+}
+
+.btn-agregar-carrito {
+    position: absolute;
+    top: 40%;
+    padding: 15px;
+}
+
+.btn-agregar-carrito:hover,
+.btn-carrito:hover {
+    background-color: #ffffff;
+    color: var(--paleta4-color);
+}
+
+.btn-agregar-carrito:active,
+.btn-carrito:hover {
+    transform: scale(1.1);
+}
+
+.btn-valor {
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--paleta3-color);
+}
+
+.i-favorito-dialogo {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.container-accion-dialogo {
+    display: flex;
+    align-items: center;
+}
+
+.p-descripcion-dialogo {
+    font-size: 15px;
+    text-align: center;
+}
+
+.container-cards-juegos-personaje {
+    display: flex;
+}
+
+@media screen and (min-width: 480px) {
+    .header-info-dialogo {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .btn-play-dialog {
+        bottom: 50%;
+    }
+    .btn-play-card {
+        left: 30%;
+        right: 30%
+    }
+    .p-descripcion-dialogo {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .card-juego-recomendados .img-juego,
+    .card-juego-favoritos .img-juego,
+    .card-juego-multijugador .img-juego {
+        width: 120%;
+    }
+    .card-juego-recomendados .img-juego:hover,
+    .card-juego-favoritos .img-juego:hover,
+    .card-juego-multijugador .img-juego:hover {
+        width: 100%;
+        filter: brightness(100%);
+        height: 100%;
+    }
+    .header-info-dialogo {
+        margin: 20px 0;
+    }
+    .container-cards-juegos,
+    .container-cards-juegos-fav,
+    .container-cards-juegos-mmo {
+        height: 25vh;
+    }
+    .card-juego-recomendados,
+    .card-juego-favoritos,
+    .card-juego-multijugador,
+    .card-juego-personaje {
+        margin: 0 20px;
+        flex: 0 0 30%;
+        height: auto;
+    }
+    .card-juego-personaje {
+        position: absolute;
+    }
+    .contenido-info-dialogo p {
+        font-size: 25px;
+    }
+    .btn-play-card {
+        bottom: 25%;
+        left: 25%;
+        right: 25%;
+    }
+    .btn-play-dialog {
+        left: 45%;
+        right: 45%;
+        width: 5%;
+    }
+    .next {
+        right: 2%;
+    }
+    .dialogo-info-juego {
+        height: 70vh;
+    }
+    .card-juego-recomendados .img-juego,
+    .card-juego-favoritos .img-juego,
+    .card-juego-multijugador .img-juego {
+        filter: brightness(50%);
+    }
+    .card-juego-personaje .img-personaje {
+        filter: brightness(50%);
+    }
+    .card-juego-personaje .img-personaje:hover {
+        filter: brightness(100%);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .card-juego-recomendados,
+    .card-juego-favoritos,
+    .card-juego-multijugador,
+    .card-juego-personaje {
+        flex: 0 0 20%;
+        width: calc(100%/4);
+    }
+    .i-destacado {
+        width: 30px;
+    }
+    .slide-control {
+        visibility: visible;
+    }
+    .container-cards-juegos,
+    .container-cards-juegos-fav,
+    .container-cards-juegos-mmo,
+    .container-cards-juegos-personaje {
+        overflow: visible;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .container-cards-juegos,
+    .container-cards-juegos-fav,
+    .container-cards-juegos-mmo {
+        height: 25vh;
+    }
+    .card-juego-recomendados,
+    .card-juego-favoritos,
+    .card-juego-multijugador,
+    .card-juego-personaje {
+        width: calc(100%/5);
+    }
+    .btn-play-dialog {
+        width: 10%;
+        left: 45%;
+        right: 45%;
+    }
+    .contenido-info-dialogo p {
+        font-size: 25px;
+    }
+    .header-info-dialogo h4 {
+        margin: 5px;
+        font-size: 55px;
+    }
+    .btn-carrito {
+        padding: 10px;
+        font-size: 22px;
+    }
+    .i-favorito-dialogo {
+        width: 35px;
+        margin-right: 20px;
+    }
+    .i-destacado-dialog {
+        width: 75px;
+    }
+    .i-play-dialogo {
+        width: 40px;
+    }
+    .dialogo-info-juego {
+        height: 75vh;
+    }
+}
+
+.slide-control-prev {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    height: 40vh;
+    top: auto;
+}
+
+.slide-control-next {
+    position: absolute;
+    height: 40vh;
+    right: 0;
+    z-index: 100;
+    top: auto;
+}
+
+.class-next {
+    overflow: visible;
+    width: auto;
+    right: 400px;
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
